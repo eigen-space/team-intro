@@ -1,0 +1,28 @@
+@import 'base';
+
+html {
+    font-size: 14px;
+    font-family: $font-family;
+}
+
+html,
+body {
+    overflow: hidden;
+
+    min-width: size(920);
+    margin: 0;
+    padding: 0;
+
+    :focus {
+        outline: 0;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,27 @@
+@import 'mixins';
+
+// Font -----------------------------
+$font-family: Poppins, sans-serif;
+
+// Size -----------------------------
+$size-1: size(72);
+$size-2: size(54);
+$size-3: size(36);
+$size-4: size(24);
+$size-5: size(18);
+
+// Text ------------------------------
+// Tip: should use as:
+// font: $h1
+$h1: bold $size-1/size(80);
+$h2: bold $size-2;
+
+$text-accent: $size-2/size(70) 300;
+
+// Color -----------------------------
+$primary: #fff;
+$secondary: #000;
+
+// Page -----------------------------
+$page-horizontal-padding: size(100);
+$page-vertical-padding: size(50);
