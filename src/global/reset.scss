@@ -3,13 +3,21 @@
 html {
     font-size: 14px;
     font-family: $font-family;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+
+    @media (max-width: 500px) {
+        font-size: 12px;
+    }
+}
+
+::selection {
+    color: $primary;
+    background-color: $secondary;
 }
 
 html,
 body {
-    overflow: hidden;
-
-    min-width: size(920);
     margin: 0;
     padding: 0;
 
@@ -22,7 +30,6 @@ a {
     text-decoration: none;
 }
 
-body {
-    margin: 0;
-    padding: 0;
+* {
+    box-sizing: border-box;
 }

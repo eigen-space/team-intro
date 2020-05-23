@@ -9,6 +9,8 @@ This is project that contains an information about team and its achievements.
 # Why do we have that dependencies?
 
 * `react` - provides api for create and control ui-components.
+* `three` - used as a platform for 3d-effects.
+* `vanta` - production-ready effect for our header page.
 * `react-dom` - provides DOM-specific methods to step out from react-world
 to DOM-world and is used on top level of application.
 
