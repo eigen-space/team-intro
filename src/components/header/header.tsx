@@ -1,27 +1,87 @@
-import { Link } from 'gatsby';
 import * as React from 'react';
 import * as styles from './header.module.scss';
+// @ts-ignore
+import Dots from 'vanta/dist/vanta.dots.min';
+import { Section } from '../../enums/section.enum';
+import { YotaIcon } from '../brands/yota';
+import { ArrivalIcon } from '../brands/arrival';
 
 interface Props {
-    siteTitle?: string;
 }
 
-interface DefaultProps {
-    siteTitle: string;
-}
+export class Header extends React.PureComponent<Props> {
+    private static MENU = [
+        Section.SERVICES,
+        Section.CASES,
+        Section.ARTICLES,
+        Section.CULTURE
+    ];
 
-export class Header extends React.PureComponent<Props & DefaultProps> {
-    static defaultProps: DefaultProps = { siteTitle: '' };
+    private vantaRef = React.createRef<HTMLDivElement>();
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    private vantaEffect: any;
+
+    static Navbar(): React.ReactElement {
+        return (
+            <div className={styles.header__navbar}>
+                {Header.MENU.map(item => <div key={item} className={styles.header__navbarItem}>{item}</div>)}
+            </div>
+        );
+    }
+
+    static Caption(): React.ReactElement {
+        return (
+            <h1 className={styles.header__title}>
+                Don’t think about product implementation
+            </h1>
+        );
+    }
+
+    static Brands(): React.ReactElement {
+        return (
+            <div className={styles.header__brands}>
+                <div className={styles.header__brandsItem}>
+                    <ArrivalIcon/>
+                </div>
+                <div className={styles.header__brandsItem}>
+                    <YotaIcon/>
+                </div>
+            </div>
+        );
+    }
+
+    static Button(): React.ReactElement {
+        return (
+            <div className={styles.header__btnContact}>Contact us</div>
+        );
+    }
+
+    componentDidMount(): void {
+        this.vantaEffect = Dots({
+            el: this.vantaRef.current,
+            scale: 1,
+            scaleMobile: 1,
+            color: 0xffffff,
+            color2: 0xe1ac00,
+            backgroundColor: 0x0
+        });
+    }
+
+    componentWillUnmount(): void {
+        if (this.vantaEffect) {
+            this.vantaEffect.destroy();
+        }
+    }
 
     render(): React.ReactNode {
         return (
             <header className={styles.header}>
+                <div className={styles.header__background} ref={this.vantaRef}/>
                 <div className={styles.header__container}>
-                    <h1 className={styles.header__title}>
-                        <Link to="/" className={styles.header__link} >
-                            {this.props.siteTitle}
-                        </Link>
-                    </h1>
+                    <Header.Navbar/>
+                    <Header.Caption/>
+                    <Header.Brands/>
+                    <Header.Button/>
                 </div>
             </header>
         );
