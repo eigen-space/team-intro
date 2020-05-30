@@ -6,9 +6,9 @@
  */
 
 import * as React from 'react';
-import * as styles from './layout.module.scss';
 import { graphql, StaticQuery } from 'gatsby';
 import { Header } from '../header/header';
+import { Mission } from '../mission/mission';
 
 interface Props {
     children: React.ReactNode[];
@@ -33,11 +33,7 @@ export class Layout extends React.PureComponent<Props> {
                         <Header siteTitle={data.site.siteMetadata.title}/>
                     )}
                 />
-                <div>
-                    <div className={styles.layout__wrapper}>
-                        <main>{this.props.children}</main>
-                    </div>
-                </div>
+                <Mission/>
             </React.Fragment>
         );
     }
