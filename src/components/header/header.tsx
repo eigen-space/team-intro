@@ -24,7 +24,11 @@ export class Header extends React.PureComponent<Props> {
     static Navbar(): React.ReactElement {
         return (
             <div className={styles.header__navbar}>
-                {Header.MENU.map(item => <div key={item} className={styles.header__navbarItem}>{item}</div>)}
+                {Header.MENU.map(item => (
+                    <div key={item} className={styles.header__navbarItem}>
+                        {item}
+                    </div>
+                ))}
             </div>
         );
     }
@@ -52,7 +56,13 @@ export class Header extends React.PureComponent<Props> {
 
     static Button(): React.ReactElement {
         return (
-            <div className={styles.header__btnContact}>Contact us</div>
+            <div className={styles.header__btnContact}>
+                Contact us
+                <span/>
+                <span/>
+                <span/>
+                <span/>
+            </div>
         );
     }
 
