@@ -2,9 +2,9 @@ import * as React from 'react';
 import * as styles from './header.module.scss';
 // @ts-ignore
 import Dots from 'vanta/dist/vanta.dots.min';
-import { Section } from '../../enums/section.enum';
-import { YotaIcon } from '../brands/yota';
-import { ArrivalIcon } from '../brands/arrival';
+import { Section } from '../../../../../enums/section.enum';
+import { YotaIcon } from '../../brands/yota';
+import { ArrivalIcon } from '../../brands/arrival';
 
 interface Props {
 }

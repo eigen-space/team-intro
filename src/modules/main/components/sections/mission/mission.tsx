@@ -6,7 +6,7 @@ interface Props {
 
 export class Mission extends React.PureComponent<Props> {
 
-    render(): React.ReactElement<{}> {
+    render(): React.ReactNode {
         return (
             <div className={styles.mission}>
                 <div className={styles.mission__container}>
