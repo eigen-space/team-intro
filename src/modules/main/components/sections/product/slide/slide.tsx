@@ -2,7 +2,7 @@ import React from 'react';
 import { Company } from '../types/company';
 import { Info } from '../types/product-summary';
 import { Review } from '../types/review';
-import styles from './slide.module.scss';
+import * as styles from './slide.module.scss';
 
 interface Props {
     company: Company;
@@ -31,7 +31,7 @@ export class Slide extends React.PureComponent<Props> {
                     <p>{info.name}</p>
                     <p>{info.task.description}</p>
                     <ul>
-                        {info.task.features.map(f => (<li>{f}</li>))}
+                        {info.task.features.map(f => (<li key={f}>{f}</li>))}
                     </ul>
                 </div>
             </div>
