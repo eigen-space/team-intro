@@ -1,0 +1,11 @@
+@import 'src/global/base';
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    color: $secondary;
+}
+

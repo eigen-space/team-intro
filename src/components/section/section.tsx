@@ -2,13 +2,19 @@ import * as React from 'react';
 import * as styles from './section.module.scss';
 
 interface Props {
+    title?: string;
 }
 
 export class Section extends React.PureComponent<Props> {
 
-    render(): React.ReactElement<{}> {
+    render(): React.ReactNode {
+        const { title } = this.props;
+
         return (
-            <div className={styles.section}>{this.props.children}</div>
+            <div className={styles.section}>
+                {title && <h2>{title}</h2>}
+                {this.props.children}
+            </div>
         );
     }
 }
