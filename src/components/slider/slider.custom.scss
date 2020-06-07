@@ -1,0 +1,67 @@
+@import 'src/global/base';
+
+
+.slider-lib {
+    $dot-height: 20px;
+
+    position: relative;
+    height: 100%;
+    color: $secondary;
+    user-select: text;
+
+    .slick-list {
+        height: 100%;
+        padding-bottom: $dot-height;
+    }
+
+    .slick-arrow {
+        display: none;
+    }
+
+    .slick-dots {
+        bottom: 0;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+        $dot-height: 5px;
+        $button-bg: #e2e2e2;
+        $active-button-bg: #a1a1a1;
+
+        .slick-list {
+            height: 100%;
+            padding-top: $dot-height;
+            padding-bottom: 0;
+        }
+
+        .slick-dots {
+            display: flex !important;
+            top: 0;
+            height: $dot-height;
+
+            li {
+                height: 100%;
+                width: 100%;
+                margin: 0;
+
+                button {
+                    height: 100%;
+                    width: 100%;
+                    background: $button-bg;
+                    padding: 0;
+
+                    &:before {
+                        display: none;
+                    }
+                }
+
+                &.slick-active {
+
+                    button {
+                        background: $active-button-bg;
+                    }
+                }
+            }
+        }
+    }
+}
+

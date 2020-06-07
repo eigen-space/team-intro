@@ -1,9 +1,14 @@
 @import '../../global/base';
 
-.mission {
+.section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 0 auto;
     position: relative;
     height: 100vh;
+    padding: $section-padding;
+
+    @media (max-width: $breakpoint-mobile) {
+        padding: 0 $section-padding / 2;
+    }
 }

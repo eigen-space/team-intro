@@ -6,6 +6,7 @@
     background: $secondary;
     height: 100vh;
     padding: 0 $page-padding;
+    overflow: hidden;;
 
     ::selection {
         color: $secondary;
