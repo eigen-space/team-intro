@@ -1,0 +1,9 @@
+@import '../../global/base';
+
+.container {
+    padding: $section-padding;
+
+    @media (max-width: $breakpoint-mobile) {
+        padding: 0 $section-padding / 2;
+    }
+}

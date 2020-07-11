@@ -1,7 +1,7 @@
 $size-factor: 1rem;
 
 @function size($n) {
-    @return $n / 16 * $size-factor;
+    @return $n / 14 * $size-factor;
 }
 
 // In SASS "/"-sign is interpreted as divide, not as slash
