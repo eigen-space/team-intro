@@ -3,8 +3,9 @@ import * as styles from './header.module.scss';
 // @ts-ignore
 import Dots from 'vanta/dist/vanta.dots.min';
 import { Section } from '../../../../../enums/section.enum';
-import { YotaIcon } from '../../brands/yota';
-import { ArrivalIcon } from '../../brands/arrival';
+import { YotaIcon } from '../../icons/yota';
+import { ArrivalIcon } from '../../icons/arrival';
+import { Brand } from '../../brand/brand';
 
 interface Props {
 }
@@ -45,10 +46,10 @@ export class Header extends React.PureComponent<Props> {
         return (
             <div className={styles.header__brands}>
                 <div className={styles.header__brandsItem}>
-                    <ArrivalIcon/>
+                    <Brand icon={ArrivalIcon}/>
                 </div>
                 <div className={styles.header__brandsItem}>
-                    <YotaIcon/>
+                    <Brand icon={YotaIcon}/>
                 </div>
             </div>
         );

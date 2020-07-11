@@ -1,0 +1,26 @@
+@import 'src/global/base';
+
+.header {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 100vh;
+    background: $secondary;
+
+    &__title {
+        color: $primary;
+    }
+
+    &__mission {
+        align-self: center;
+        color: $primary;
+        width: size(850);
+        font-size: 48px;
+        line-height: size(62);
+    }
+
+    &__product {
+        object-fit: contain;
+        overflow: hidden;
+    }
+}
