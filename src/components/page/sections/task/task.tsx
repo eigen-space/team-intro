@@ -8,7 +8,6 @@ import styles from './task.module.scss';
 
 interface Props {
     introduction: string;
-    content: string;
     conclusion: string;
     tasks: string[];
 }
@@ -19,8 +18,7 @@ export class Task extends React.PureComponent<Props> {
         return (
             <PageSection mode={SectionModeType.SECONDARY}>
                 <Title title={'Task'}/>
-                {this.props.introduction && <Paragraph content={this.props.introduction}/>}
-                <Paragraph content={this.props.content}/>
+                <Paragraph content={this.props.introduction}/>
                 <div className={styles.listWrapper}>
                     <TopList list={this.props.tasks}/>
                 </div>

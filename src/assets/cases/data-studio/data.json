@@ -1,0 +1,29 @@
+{
+    "title": "Data Studio",
+    "mission": "Create a single information space across the company on the basis of actual and consistent data at any time.",
+    "imageUrl": "/cases/data-studio/images/data-studio-product.png",
+    "background": "Top management of all the companies requires answers. Answers for questions about projects, people and money. Arrival is no exception. The only exception is that Arrival has a very ambitious goal. It is to have autonomous enterprise that produces the electric cars of the generation 2. Our team was happy to help embrace the problem. Exactly the Data Studio is a tool that plays the key role in managing data for the autonomous enterprise, discovering data to find needed answers and making decisions in cooperation with the autonomous enterprise when it can not solve the problem itself.",
+    "taskIntroduction": "Our starting point was to dig into the actual problem of stakeholders. Each of our projects is about solving problems for customers. We are trying to grasp what they really need, we make interviews, researches and prototypes to synchronize our vision with the vision of our customers. As a result, we got the muddled list of user stories we need. We worked with it to get something more strong, consistent and plausible. And voila, here it is, we have the short list of clear user stories stakeholders needs mostly:",
+    "taskConclusion": "The next step was to create an MVP to prove the solution we have. It was the visualization of the data as a graph to be able to drill down into the data and cover with our eyes different relations between different data entities.",
+    "tasks": [
+        "Discover data to make decisions faster and better",
+        "Make changes in the data immediately once I made a decision",
+        "Share and export data"
+    ],
+    "productChallenges": [
+        "how to visualize data to make it more clear to instantly grasp the essence of the data?",
+        "how to navigate through the graph?",
+        "how to combine different approaches to visualize and edit data?",
+        "how to deal with big data, really big data?",
+        "how to deal with data from any business domain you can imagine?",
+        "how to find the key to all the questions above, how the MVP should look like and how to get it working if you have only 3 months for that?"
+    ],
+    "technicalChallenges": [
+        "choose a solution for the graph visualization",
+        "how to position nodes",
+        "how to deal with performance when you have a lot of particles to show",
+        "how to operate on different levels of data visualization: small amount of entities, but high level of details and, vice versa, there is no details, but much more entities",
+        "work with a RDF (graph) database",
+        "search though the graph (link to medium)"
+    ]
+}

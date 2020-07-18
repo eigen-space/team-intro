@@ -16,7 +16,7 @@ export class BulletList extends React.PureComponent<Props> {
                     {title}
                 </div>
                 <ul>
-                    {items.map(item => <li className={styles.bulletList__item}>{item}</li>)}
+                    {items.map(item => <li key={item} className={styles.bulletList__item}>{item}</li>)}
                 </ul>
             </div>
         );
