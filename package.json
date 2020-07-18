@@ -9,7 +9,7 @@
     "license": "MIT",
     "scripts": {
         "build": "gatsby build",
-        "dev": "gatsby develop",
+        "dev": "gatsby develop -H 0.0.0.0",
         "serve": "gatsby serve",
         "clean": "gatsby clean",
         "lint:code": "eslint --ext .js,.jsx,.ts,.tsx",
@@ -32,7 +32,11 @@
     },
     "dependencies": {
         "react": "16.13.1",
-        "react-dom": "16.13.1"
+        "react-dom": "16.13.1",
+        "react-slick": "0.26.1",
+        "slick-carousel": "1.8.1",
+        "three": "0.116.1",
+        "vanta": "0.5.15"
     },
     "devDependencies": {
         "@eigenspace/codestyle": "latest",
@@ -40,6 +44,7 @@
         "@hot-loader/react-dom": "16.13.0",
         "@types/prop-types": "15.7.3",
         "@types/react": "16.9.35",
+        "@types/react-slick": "0.23.4",
         "eslint-plugin-eigenspace-script": "latest",
         "eslint-plugin-prettier": "3.1.2",
         "gatsby": "2.21.22",

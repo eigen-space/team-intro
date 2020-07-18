@@ -6,38 +6,14 @@
  */
 
 import * as React from 'react';
-import * as styles from './layout.module.scss';
-import { graphql, StaticQuery } from 'gatsby';
-import { Header } from '../header/header';
 
-interface Props {
-    children: React.ReactNode[];
-}
+export class Layout extends React.PureComponent {
 
-export class Layout extends React.PureComponent<Props> {
     render(): React.ReactNode {
 
         return (
             <React.Fragment>
-                <StaticQuery
-                    query={graphql`
-                        query SiteTitleQuery {
-                            site {
-                                siteMetadata {
-                                  title
-                                }
-                            }
-                        }
-                    `}
-                    render={data => (
-                        <Header siteTitle={data.site.siteMetadata.title}/>
-                    )}
-                />
-                <div>
-                    <div className={styles.layout__wrapper}>
-                        <main>{this.props.children}</main>
-                    </div>
-                </div>
+                {this.props.children}
             </React.Fragment>
         );
     }

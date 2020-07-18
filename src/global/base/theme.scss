@@ -1,0 +1,33 @@
+@import 'mixins';
+
+// Font -----------------------------
+$font-family: Poppins, sans-serif;
+
+// Size -----------------------------
+$size-1: size(72);
+$size-2: size(54);
+$size-3: size(36);
+$size-4: size(24);
+$size-5: size(18);
+
+// Page -----------------------------
+$container-width: size(1280);
+
+// Text ------------------------------
+// Tip: should use as:
+// font: $h1
+$h1: bold $size-1 slash() size(80) $font-family;
+$h2: bold $size-2 $font-family;
+
+$text-accent: $size-2 slash() size(70) 300 $font-family;
+
+// Color -----------------------------
+$primary: #fff;
+$secondary: #000;
+
+// Page -----------------------------
+$page-padding: size(50);
+$section-padding: size(50);
+
+// Breakpoints -----------------------
+$breakpoint-mobile: 768px;

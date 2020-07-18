@@ -1,7 +1,6 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/browser-apis/
- */
+import './src/global/reset.scss';
+import * as Three from 'three';
 
-import './src/global/styles.global.scss';
+// We use special 3d-effect, but it doesn't support library from npm
+// https://github.com/tengbao/vanta/blob/master/src/vanta.dots.js
+window.THREE = Three;

@@ -1,0 +1,19 @@
+@import 'src/global/base';
+
+.slide {
+	position: relative;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+
+	&__box {
+
+		&--position {
+
+			&_left {
+				padding-right: 10%;
+			}
+		}
+	}
+}

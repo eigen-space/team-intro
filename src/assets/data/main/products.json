@@ -1,0 +1,46 @@
+[
+    {
+        "company": {
+            "name": "VeeRoute",
+            "description": "is British tech company that produces electrical vehicles"
+        },
+        "review": {
+            "description": "Guys, are awesome as fuck, I was really enjoyed working with them!",
+            "author": "Michail Boldov",
+            "role": "product manager"
+        },
+        "info": {
+            "name": "Caravan",
+            "task": {
+                "description": "Certainly, the main core of logistics is optimization algorithms which had been developed by guys from the algorithm team. But UI also has its own challenges to fit the needs of postal services.",
+                "features": [
+                    "Allows dispatcher to plan routes across the country, find bottlenecks and fix it",
+                    "Lets downloads data in reports",
+                    "Allows manager to configure routes in a flexible way"
+                ]
+            }
+        }
+    },
+    {
+        "company": {
+            "name": "Arrival",
+            "description": "is British tech company that produces electrical vehicles"
+        },
+        "review": {
+            "description": "Guys, are awesome as fuck, I was really enjoyed working with them!",
+            "author": "Michail Boldov",
+            "role": "product manager"
+        },
+        "info": {
+            "name": "DataStudio",
+            "task": {
+                "description": "Certainly, the main core of logistics is optimization algorithms which had been developed by guys from the algorithm team. But UI also has its own challenges to fit the needs of postal services.",
+                "features": [
+                    "Allows dispatcher to plan routes across the country, find bottlenecks and fix it",
+                    "Lets downloads data in reports",
+                    "Allows manager to configure routes in a flexible way"
+                ]
+            }
+        }
+    }
+]
