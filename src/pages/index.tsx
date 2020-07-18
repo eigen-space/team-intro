@@ -1,22 +1,37 @@
-// Gatsby supports TypeScript natively!
 import * as React from 'react';
-import { PageProps } from 'gatsby';
+import { graphql, PageProps, StaticQuery } from 'gatsby';
 
 import { Layout } from '../components/layout/layout';
-import { Mission } from '../modules/main/components/sections/mission/mission';
-import { Header } from '../modules/main/components/sections/header/header';
-import { Product } from '../modules/main/components/sections/product/product';
-import { Footer } from '../modules/main/components/sections/footer/footer';
 
-export default class DemoPage extends React.PureComponent<PageProps> {
+interface Content extends PageProps {
+    header: string;
+}
+
+export default class DemoPage extends React.PureComponent<Content> {
 
     render(): React.ReactNode {
         return (
             <Layout>
-                <Header/>
-                <Mission/>
-                <Product/>
-                <Footer/>
+                <StaticQuery
+                    query={graphql`
+                        query {
+                            allMarkdownRemark(filter: {
+                             frontmatter: { template: { eq: "main" } } 
+                             }) {
+                                edges {
+                                    node {
+                                        frontmatter {
+                                            path
+                                            header
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    `}
+                    render={data => (<h1>{data.header}</h1>)}
+                />
+                <p>Welcome to page ({this.props.path})</p>
             </Layout>
         );
     }

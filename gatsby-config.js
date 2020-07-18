@@ -3,6 +3,11 @@ module.exports = {
     plugins: [
         'gatsby-transformer-sharp',
         'gatsby-plugin-sharp',
-        'gatsby-plugin-sass'
+        'gatsby-plugin-sass',
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: { name: 'main', path: `${__dirname}/src/assets/content` }
+        },
+        'gatsby-transformer-remark'
     ]
 };
