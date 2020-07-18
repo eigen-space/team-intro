@@ -9,9 +9,9 @@ export class Title extends React.PureComponent<Props> {
 
     render(): React.ReactNode {
         return (
-            <div className={`${styles.title}`}>
+            <h2 className={`${styles.title}`}>
                 {this.props.title}
-            </div>
+            </h2>
         );
     }
 }

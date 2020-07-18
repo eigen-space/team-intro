@@ -1,5 +1,7 @@
 @import 'src/global/base';
 
 .container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(size(360), 1fr));
+    grid-gap: size(65);
 }

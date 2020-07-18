@@ -1,8 +1,11 @@
 @import 'src/global/base';
 
 .title {
-    font-size: 48px;
     line-height: size(62);
     color: $secondary;
     margin-bottom: size(50);
+
+    @media (max-width: $breakpoint-mobile) {
+        margin-bottom: size(20);
+    }
 }

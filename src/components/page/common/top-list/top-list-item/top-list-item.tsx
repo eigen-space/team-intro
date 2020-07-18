@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styles from './top-list-item.module.scss';
+import commonStyles from '../../../../../common/styles/common.module.scss';
 
 interface Props {
     order: number;
@@ -14,7 +15,7 @@ export class TopListItem extends React.PureComponent<Props> {
                 <div className={styles.topListItem__order}>
                     {this.props.order}
                 </div>
-                <div className={styles.topListItem__content}>
+                <div className={commonStyles.text}>
                     {this.props.content}
                 </div>
             </div>

@@ -1,7 +1,6 @@
 @import 'src/global/base';
 
 .top-list-item {
-    width: size(360);
     display: flex;
     color: $secondary;
 
@@ -10,10 +9,10 @@
         font-size: 96px;
         line-height: 1;
         margin-right: size(20);
-    }
 
-    &__content {
-        font-size: 36px;
-        line-height: size(47);
+        @media (max-width: $breakpoint-mobile) {
+            font-size: $size-1;
+            min-width: size(40);
+        }
     }
 }

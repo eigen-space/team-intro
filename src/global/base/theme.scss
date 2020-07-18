@@ -18,6 +18,7 @@ $container-width: size(1280);
 // font: $h1
 $h1: bold $size-1 slash() size(80) $font-family;
 $h2: bold $size-2 $font-family;
+$h3: bold $size-3 $font-family;
 
 $text-accent: $size-2 slash() size(70) 300 $font-family;
 
