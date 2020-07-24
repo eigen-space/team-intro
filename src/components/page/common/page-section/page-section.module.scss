@@ -1,9 +1,14 @@
 @import 'src/global/base';
 
-.primary-mode-styles {
+.page-section {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.page-section--primary {
     background-color: $primary;
 }
 
-.secondary-mode-styles {
+.page-section--secondary {
     background-color: $delimiter;
 }

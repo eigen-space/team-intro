@@ -2,4 +2,8 @@
 
 .brand {
     height: size(80);
+
+    @media (max-width: $breakpoint-mobile) {
+        height: size(50);
+    }
 }

@@ -9,6 +9,7 @@
 
     &__title {
         color: $primary;
+        margin-bottom: size(10);
     }
 
     &__mission {
@@ -19,7 +20,14 @@
     }
 
     &__product {
+        margin-top: size(10);
         object-fit: contain;
         overflow: hidden;
+    }
+
+    &__brand {
+        position: absolute;
+        bottom: $page-padding;
+        right: $page-padding;
     }
 }

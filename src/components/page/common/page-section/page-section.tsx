@@ -17,11 +17,13 @@ export class PageSection extends React.PureComponent<Props, {}, DefaultProps> {
     render(): React.ReactNode {
         const { mode } = this.props;
 
-        const modeStyles = mode === SectionModeType.PRIMARY ? styles.primaryModeStyles : styles.secondaryModeStyles;
+        const modeStyles = mode === SectionModeType.PRIMARY ? styles.pageSectionPrimary : styles.pageSectionSecondary;
 
         return (
             <div className={`${commonStyles.container} ${modeStyles}`}>
-                {this.props.children}
+                <div className={`${styles.pageSection}`}>
+                    {this.props.children}
+                </div>
             </div>
         );
     }

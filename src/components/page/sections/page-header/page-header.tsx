@@ -18,9 +18,11 @@ export class PageHeader extends React.PureComponent<Props> {
         return (
             <div className={`${commonStyles.container} ${styles.header}`}>
                 <h1 className={styles.header__title}>{title}</h1>
-                <Brand icon={icon}/>
                 <h2 className={styles.header__mission}>{`— ${mission}`}</h2>
                 <img className={styles.header__product} src={imageUrl}/>
+                <div className={styles.header__brand}>
+                    <Brand icon={icon}/>
+                </div>
             </div>
         );
     }
