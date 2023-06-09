@@ -47,7 +47,7 @@
         "@types/react-slick": "0.23.4",
         "eslint-plugin-eigenspace-script": "latest",
         "eslint-plugin-prettier": "3.1.2",
-        "gatsby": "2.21.22",
+        "gatsby": "4.25.7",
         "gatsby-plugin-sass": "2.3.1",
         "gatsby-plugin-sharp": "2.6.2",
         "gatsby-source-filesystem": "2.3.1",
